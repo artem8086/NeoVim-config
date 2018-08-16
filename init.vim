@@ -119,6 +119,9 @@ let g:tagbar_type_php = {
 \	]
 \}
 
+" typescript plugin
+let g:tsuquyomi_completion_detail = 1
+
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
 call plug#begin('~/.local/share/nvim/plugged')
@@ -155,6 +158,9 @@ Plug 'arnaud-lb/vim-php-namespace'
 
 " javascript
 Plug 'pangloss/vim-javascript'
+
+" typescript
+Plug 'Quramy/tsuquyomi'
 
 " html
 Plug 'othree/html5.vim'
