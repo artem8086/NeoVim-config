@@ -122,6 +122,9 @@ let g:tagbar_type_php = {
 " typescript plugin
 let g:tsuquyomi_completion_detail = 1
 
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
+
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
 call plug#begin('~/.local/share/nvim/plugged')
@@ -148,6 +151,7 @@ Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
 Plug 'gabrielelana/vim-markdown'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 Plug 'majutsushi/tagbar'
 
