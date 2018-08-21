@@ -16,7 +16,10 @@ set imsearch=0
 set tabstop=4
 set shiftwidth=4
 set smarttab
-set et
+set noet
+retab
+
+set clipboard=unnamedplus
 
 set nowrap
 set noswapfile
@@ -118,6 +121,21 @@ let g:tagbar_type_php = {
 \		'f:functions'
 \	]
 \}
+
+" <Leader>f{char} to move to {char}
+map  <C-f> <Plug>(easymotion-bd-f)
+nmap <C-f> <Plug>(easymotion-overwin-f)
+
+" s{char}{char} to move to {char}{char}
+nmap <Leader>s <Plug>(easymotion-overwin-f2)
+
+" Move to line
+map <C-l> <Plug>(easymotion-bd-jk)
+nmap <C-l> <Plug>(easymotion-overwin-line)
+
+" Move to word
+map  <C-w> <Plug>(easymotion-bd-w)
+nmap <C-w> <Plug>(easymotion-overwin-w)
 
 " typescript plugin
 let g:tsuquyomi_completion_detail = 1
