@@ -130,8 +130,8 @@ nmap <C-f> <Plug>(easymotion-overwin-f)
 nmap <Leader>s <Plug>(easymotion-overwin-f2)
 
 " Move to line
-map <C-l> <Plug>(easymotion-bd-jk)
-nmap <C-l> <Plug>(easymotion-overwin-line)
+map <Leader>s <Plug>(easymotion-bd-jk)
+nmap <Leader>s <Plug>(easymotion-overwin-line)
 
 " Move to word
 map  <C-w> <Plug>(easymotion-bd-w)
