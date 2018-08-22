@@ -134,8 +134,8 @@ map <Leader>s <Plug>(easymotion-bd-jk)
 nmap <Leader>s <Plug>(easymotion-overwin-line)
 
 " Move to word
-map  <C-w> <Plug>(easymotion-bd-w)
-nmap <C-w> <Plug>(easymotion-overwin-w)
+map  <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
 
 " typescript plugin
 let g:tsuquyomi_completion_detail = 1
