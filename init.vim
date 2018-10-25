@@ -44,24 +44,8 @@ autocmd BufRead *.sql set filetype=mysql
 
 imap jk <esc>
 imap kj <esc>
-vmap jk <esc>
-vmap kj <esc>
 
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-
-nmap <C-F5> <Esc>:BufExplorer<cr>
-vmap <C-F5> <esc>:BufExplorer<cr>
-imap <C-F5> <esc>:BufExplorer<cr>
-
-" F6 - ******************** **********
-nmap <C-F6> :bp<cr>
-vmap <C-F6> <esc>:bp<cr>i
-imap <C-F6> <esc>:bp<cr>i
-
-" F7 - ****************** **********
-nmap <C-F7> :bn<cr>
-vmap <C-F7> <esc>:bn<cr>i
-imap <C-F7> <esc>:bn<cr>i
 
 nmap <C-N>v :NERDTree<cr>
 vmap <C-N>v <esc>:NERDTree<cr>i
@@ -140,9 +124,6 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 " typescript plugin
 let g:tsuquyomi_completion_detail = 1
 
-" Use deoplete.
-let g:deoplete#enable_at_startup = 1
-
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
 call plug#begin('~/.local/share/nvim/plugged')
@@ -169,7 +150,6 @@ Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
 Plug 'gabrielelana/vim-markdown'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 Plug 'majutsushi/tagbar'
 
