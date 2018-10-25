@@ -11,4 +11,4 @@ After installation write:
 
 That's all.
 
-![Скриншот](screenshot.jpg)
+![Скриншот](/screenshot.jpg)
