@@ -171,7 +171,7 @@ let g:tsuquyomi_completion_detail = 1
 
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
-call plug#begin('vimfiles\plugged')
+call plug#begin('~\vimfiles\plugged')
 
 " Any valid git URL is allowed
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
