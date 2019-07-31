@@ -34,6 +34,9 @@ function MyDiff()
   endif
 endfunction
 
+set langmenu=ru_RU.UTF-8    " sets the language of the menu (gvim)
+language ru                 " sets the language of the messages / ui (vim)
+
 set secure
 set exrc
 
@@ -119,7 +122,7 @@ let g:EasyMotion_do_share = 0
 hi link EasyMotionTarget Search
 
 set encoding=utf-8
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h11
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h10
 
 let g:airline_theme = 'deep_space'
 let g:airline_powerline_fonts = 1
@@ -211,6 +214,9 @@ Plug 'Quramy/tsuquyomi'
 
 " html
 Plug 'othree/html5.vim'
+
+" volt
+Plug 'yukpiz/vim-volt-syntax'
 
 Plug 'ansman/vim-jade'
 Plug 'iloginow/vim-stylus'
